@@ -4,6 +4,11 @@ def validar_id_usuario(id_usuario:str):
     Retorna True:False
     """
     # Completar
+    try:
+        int(id_usuario)
+        return True
+    except ValueError:
+        return False
     return True
 
 def validar_nombre(nombre:str):
